@@ -41,6 +41,10 @@ jobs:
       working-directory: ./crud_clientes_node-main/backend
       run: yarn add swagger-jsdoc   
 
+    - name: Instalando swagger-ui-express
+      working-directory: ./crud_clientes_node-main/backend
+      run: yarn add swagger-ui-express    
+
     - name: Levantar o servidor
       working-directory: ./crud_clientes_node-main/backend
       run: node app.js
