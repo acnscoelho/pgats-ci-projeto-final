@@ -52,7 +52,6 @@ jobs:
     - name: Testes E2E (end-to-end) 
       working-directory: trabalho-entregue 
       run: yarn run test
-      env:
-        URL: 'http://localhost:3001'
+      
 
 
