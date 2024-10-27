@@ -13,7 +13,7 @@ describe('Suite de testes crud (post, get, put, delete USER)', () => {
     beforeAll(async()=>{
         const payloadUsuario = {
             nome: faker.person.fullName(),
-            telefone: faker.phone.number('+55 (##) ####-####'),
+            telefone: faker.string.numeric('+55 (##) ####-####'),
             email: faker.internet.email(),
             senha: faker.internet.password()
         }
@@ -33,7 +33,7 @@ describe('Suite de testes crud (post, get, put, delete USER)', () => {
     it('Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados.', async () => {
         const novoUsuario = {
             nome: faker.person.fullName(),
-            telefone: faker.phone.number('+55 (##) ####-####'),
+            telefone: faker.string.numeric('+55 (##) ####-####'),
             email: faker.internet.email(),
             senha: faker.internet.password()
         }
