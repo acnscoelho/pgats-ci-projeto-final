@@ -23,15 +23,18 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Instalando Yarn
-      run: npm install -g yarn
+      run: cd trabalho-entregue npm install -g yarn
 
     - name: Instalando dependências
-      run: yarn  
+      run: cd trabalho-entregue yarn  
 
     - name: Instalando Playwright
-      run: yarn playwright install
+      run: cd trabalho-entregue yarn playwright install
+
+    - name: Levantar o servidor
+      run: cd crud_clientes_node-main/backend node app.js
 
     - name: Testes E2E (end-to-end)  
-      run: yarn run e2e
+      run: cd trabalho-entregue yarn run e2e
 
 
