@@ -51,7 +51,7 @@ jobs:
 
     - name: Aguardando o servidor iniciar
       run:  |
-        while ! curl -s http://localhost:3001/healthcheck; do
+        while ! curl -s http://localhost:3000/healthcheck; do
           echo "Aguardando o servidor iniciar..."
           sleep 5
         done
