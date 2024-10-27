@@ -34,7 +34,7 @@ jobs:
       run: yarn playwright install
 
     - name: Levantar o servidor
-      working-directory: crud_clientes_node-main/backend
+      working-directory: ./crud_clientes_node-main/backend
       run: node app.js
 
     - name: Testes E2E (end-to-end) 
