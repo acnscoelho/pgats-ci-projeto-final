@@ -20,18 +20,15 @@ jobs:
     # passo a passo das acoes do job
     steps: 
 
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
+
+    - name: Instalando Yarn
+      run: npm install -g yarn
 
     - name: Instalando dependências
-      run: npm install 
+      run: yarn  
 
     - name: Testes E2E (end-to-end)  
-      run: npm run e2e
-
-    - name: Relatório de cobertura
-      uses: actions/upload-artifact@v3 
-      with:
-        name: Relatorio-cobertura
-        path: reports/coverage/lcov.info 
+      run: yarn run e2e
 
 
