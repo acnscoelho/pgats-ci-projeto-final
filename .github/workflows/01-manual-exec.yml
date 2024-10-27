@@ -33,6 +33,10 @@ jobs:
       working-directory: trabalho-entregue
       run: yarn global add typescript
 
+    - name: Instalando Express
+      working-directory: ./crud_clientes_node-main/backend
+      run: yarn add express 
+
     - name: Levantar o servidor
       working-directory: ./crud_clientes_node-main/backend
       run: node app.js
