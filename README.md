@@ -13,7 +13,7 @@
    ```
 6. Instale os browsers e dependências
    ```shell
-   yarn playwright install
+   yarn global add typescript
    ```
 7. Levante o serviço em uma janela diferente: /Trabalho_Entregue_CI/crud_clientes_node-main/backend
    ```shell

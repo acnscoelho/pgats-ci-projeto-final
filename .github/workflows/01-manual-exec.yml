@@ -31,7 +31,7 @@ jobs:
 
     - name: Instalando TypeScript
       working-directory: trabalho-entregue
-      run: yarn typescript install
+      run: yarn global add typescript
 
     - name: Levantar o servidor
       working-directory: ./crud_clientes_node-main/backend
