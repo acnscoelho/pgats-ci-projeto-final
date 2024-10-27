@@ -29,9 +29,9 @@ jobs:
       working-directory: trabalho-entregue
       run: yarn  
 
-    - name: Instalando TypeScript
+    - name: Instalando Playwright
       working-directory: trabalho-entregue
-      run: yarn global add typescript
+      run: yarn playwright install
 
     - name: Instalando Express
       working-directory: ./crud_clientes_node-main/backend
