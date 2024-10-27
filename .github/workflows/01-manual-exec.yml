@@ -33,8 +33,12 @@ jobs:
       working-directory: trabalho-entregue
       run: yarn playwright install
 
+    - name: Levantar o servidor
+      working-directory: ../backend
+      run: node app.js
+
     - name: Testes E2E (end-to-end) 
       working-directory: trabalho-entregue 
-      run: yarn run e2e
+      run: yarn run test
 
 
