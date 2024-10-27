@@ -29,9 +29,9 @@ jobs:
       working-directory: trabalho-entregue
       run: yarn  
 
-    - name: Instalando Playwright
+    - name: Instalando TypeScript
       working-directory: trabalho-entregue
-      run: yarn playwright install
+      run: yarn global add typescript
 
     - name: Instalando Express
       working-directory: ./crud_clientes_node-main/backend
@@ -47,12 +47,11 @@ jobs:
 
     - name: Levantar o servidor em background
       working-directory: ./crud_clientes_node-main/backend
-      run: node app.js 1025 &
+      run: node app.js 3001 &
 
     - name: Testes E2E (end-to-end) 
       working-directory: trabalho-entregue 
       run: yarn run test
-      env:
-        URL: 'http://localhost:3000'
+
 
 
