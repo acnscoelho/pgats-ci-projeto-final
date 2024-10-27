@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "e2e": "jest"
   },
   "keywords": [],
   "author": "",
