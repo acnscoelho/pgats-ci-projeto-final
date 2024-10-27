@@ -26,67 +26,9 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1721626802963,
+  "startTime": 1729987873790,
   "success": false,
   "testResults": [
-    {
-      "leaks": false,
-      "numFailingTests": 0,
-      "numPassingTests": 2,
-      "numPendingTests": 0,
-      "numTodoTests": 0,
-      "openHandles": [],
-      "perfStats": {
-        "end": 1721626807377,
-        "runtime": 4086,
-        "slow": false,
-        "start": 1721626803291
-      },
-      "skipped": false,
-      "snapshot": {
-        "added": 0,
-        "fileDeleted": false,
-        "matched": 0,
-        "unchecked": 0,
-        "uncheckedKeys": [],
-        "unmatched": 0,
-        "updated": 0
-      },
-      "testFilePath": "C:\\Trabalho_API\\trabalho-entregue\\test\\users\\teste-integrado-users.test.js",
-      "testResults": [
-        {
-          "ancestorTitles": [
-            "Suite de testes crud (post, get, put, delete USER)"
-          ],
-          "duration": 34,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Suite de testes crud (post, get, put, delete USER) Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados.",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 9,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados."
-        },
-        {
-          "ancestorTitles": [
-            "Suite de testes crud (post, get, put, delete USER)"
-          ],
-          "duration": 19,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Suite de testes crud (post, get, put, delete USER) Deverá remover o registro cadastrado anteriormente. E retornar 204.",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 3,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "Deverá remover o registro cadastrado anteriormente. E retornar 204."
-        }
-      ],
-      "failureMessage": null
-    },
     {
       "leaks": false,
       "numFailingTests": 0,
@@ -95,10 +37,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1721626807621,
-        "runtime": 4340,
-        "slow": false,
-        "start": 1721626803281
+        "end": 1729987881891,
+        "runtime": 7653,
+        "slow": true,
+        "start": 1729987874238
       },
       "skipped": false,
       "snapshot": {
@@ -110,13 +52,13 @@
         "unmatched": 0,
         "updated": 0
       },
-      "testFilePath": "C:\\Trabalho_API\\trabalho-entregue\\test\\conteudo\\crud-conteudo.test.js",
+      "testFilePath": "C:\\Trabalho_Entregue_CI\\trabalho-entregue\\test\\conteudo\\crud-conteudo.test.js",
       "testResults": [
         {
           "ancestorTitles": [
             "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS)"
           ],
-          "duration": 13,
+          "duration": 25,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS) Test 02: deve consultar o registro cadastrado anteriormente, e validar resultado e statusCode",
@@ -131,7 +73,7 @@
           "ancestorTitles": [
             "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS)"
           ],
-          "duration": 34,
+          "duration": 35,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS) Test 03: deve alterar o conteudo cadastrado anteriormente, e validar que os dados realmente foram alterados e validar statusCode",
@@ -146,7 +88,7 @@
           "ancestorTitles": [
             "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS)"
           ],
-          "duration": 39,
+          "duration": 41,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS) Test 04: deve remover o registro cadastrado, e validar a consulta do registro para garantir sua remoção.",
@@ -156,6 +98,64 @@
           "retryReasons": [],
           "status": "passed",
           "title": "Test 04: deve remover o registro cadastrado, e validar a consulta do registro para garantir sua remoção."
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 2,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1729987881892,
+        "runtime": 7654,
+        "slow": true,
+        "start": 1729987874238
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Trabalho_Entregue_CI\\trabalho-entregue\\test\\users\\teste-integrado-users.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Suite de testes crud (post, get, put, delete USER)"
+          ],
+          "duration": 55,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes crud (post, get, put, delete USER) Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 9,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes crud (post, get, put, delete USER)"
+          ],
+          "duration": 42,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes crud (post, get, put, delete USER) Deverá remover o registro cadastrado anteriormente. E retornar 204.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Deverá remover o registro cadastrado anteriormente. E retornar 204."
         }
       ],
       "failureMessage": null
