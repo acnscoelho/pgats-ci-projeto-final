@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1729993748168,
+  "startTime": 1729996581269,
   "success": false,
   "testResults": [
     {
@@ -37,10 +37,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1729993754783,
-        "runtime": 6214,
+        "end": 1729996588255,
+        "runtime": 6571,
         "slow": true,
-        "start": 1729993748569
+        "start": 1729996581684
       },
       "skipped": false,
       "snapshot": {
@@ -52,13 +52,13 @@
         "unmatched": 0,
         "updated": 0
       },
-      "testFilePath": "C:\\Trabalho_Entregue_CI\\trabalho-entregue\\test\\conteudo\\crud-conteudo.test.js",
+      "testFilePath": "C:\\pgats-ci-projeto-final\\trabalho-entregue\\test\\conteudo\\crud-conteudo.test.js",
       "testResults": [
         {
           "ancestorTitles": [
             "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS)"
           ],
-          "duration": 49,
+          "duration": 14,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS) Test 02: deve consultar o registro cadastrado anteriormente, e validar resultado e statusCode",
@@ -73,7 +73,7 @@
           "ancestorTitles": [
             "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS)"
           ],
-          "duration": 44,
+          "duration": 43,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS) Test 03: deve alterar o conteudo cadastrado anteriormente, e validar que os dados realmente foram alterados e validar statusCode",
@@ -88,7 +88,7 @@
           "ancestorTitles": [
             "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS)"
           ],
-          "duration": 58,
+          "duration": 36,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS) Test 04: deve remover o registro cadastrado, e validar a consulta do registro para garantir sua remoção.",
@@ -110,10 +110,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1729993754788,
-        "runtime": 6219,
+        "end": 1729996588257,
+        "runtime": 6573,
         "slow": true,
-        "start": 1729993748569
+        "start": 1729996581684
       },
       "skipped": false,
       "snapshot": {
@@ -125,13 +125,13 @@
         "unmatched": 0,
         "updated": 0
       },
-      "testFilePath": "C:\\Trabalho_Entregue_CI\\trabalho-entregue\\test\\users\\teste-integrado-users.test.js",
+      "testFilePath": "C:\\pgats-ci-projeto-final\\trabalho-entregue\\test\\users\\teste-integrado-users.test.js",
       "testResults": [
         {
           "ancestorTitles": [
             "Suite de testes crud (post, get, put, delete USER)"
           ],
-          "duration": 51,
+          "duration": 45,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes crud (post, get, put, delete USER) Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados.",
@@ -146,7 +146,7 @@
           "ancestorTitles": [
             "Suite de testes crud (post, get, put, delete USER)"
           ],
-          "duration": 60,
+          "duration": 37,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes crud (post, get, put, delete USER) Deverá remover o registro cadastrado anteriormente. E retornar 204.",
