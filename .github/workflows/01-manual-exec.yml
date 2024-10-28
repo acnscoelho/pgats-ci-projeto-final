@@ -49,18 +49,8 @@ jobs:
       working-directory: ./crud_clientes_node-main/backend
       run: node app.js &
 
-    - name: Aguardando o servidor iniciar
-      run:  |
-        while ! curl -s http://localhost:3000/healthcheck; do
-          echo "Aguardando o servidor iniciar..."
-          sleep 5
-        done
-        echo "Servidor iniciado!" 
-
     - name: Testes E2E (end-to-end) 
       working-directory: trabalho-entregue 
       run: yarn run test
-      env:
-        URL: 'http://localhost:3001'
 
 

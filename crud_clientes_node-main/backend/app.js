@@ -5,7 +5,7 @@ const cors = require("cors");
 const setupSwagger = require("../backend/docs/swagger");
 
 const app = express(); // Definindo a variável app primeiro
-const port = 3000;
+const port = 3001;
 
 setupSwagger(app);
 
