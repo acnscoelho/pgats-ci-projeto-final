@@ -49,6 +49,13 @@ jobs:
       working-directory: ./crud_clientes_node-main/backend
       run: node app.js &
 
+    - name: Aguardar o servidor estar pronto
+      run: |
+        until $(curl --output /dev/null --silent --head --fail http://localhost:3000); do
+          printf '.'
+          sleep 5
+        done  
+
     - name: Testes E2E (end-to-end) 
       working-directory: trabalho-entregue 
       run: yarn run test
