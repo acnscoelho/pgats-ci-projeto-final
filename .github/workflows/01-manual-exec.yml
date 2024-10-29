@@ -47,14 +47,17 @@ jobs:
 
     - name: Levantar o servidor em background
       working-directory: ./crud_clientes_node-main/backend
-      run: node app.js &
+      run: node app.js > server.log 2>&1 &
 
     - name: Aguardar o servidor estar pronto
       run: |
         until $(curl --output /dev/null --silent --head --fail http://localhost:3000); do
           printf '.'
           sleep 5
-        done  
+        done
+
+    - name: Exibir logs do servidor
+      run: cat ./crud_clientes_node-main/backend/server.log
 
     - name: Testes E2E (end-to-end) 
       working-directory: trabalho-entregue 
