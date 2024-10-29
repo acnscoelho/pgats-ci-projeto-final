@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1730009289425,
+  "startTime": 1730160842910,
   "success": false,
   "testResults": [
     {
@@ -37,10 +37,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1730009297022,
-        "runtime": 7164,
+        "end": 1730160852645,
+        "runtime": 9198,
         "slow": true,
-        "start": 1730009289858
+        "start": 1730160843447
       },
       "skipped": false,
       "snapshot": {
@@ -58,7 +58,7 @@
           "ancestorTitles": [
             "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS)"
           ],
-          "duration": 22,
+          "duration": 19,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS) Test 02: deve consultar o registro cadastrado anteriormente, e validar resultado e statusCode",
@@ -73,7 +73,7 @@
           "ancestorTitles": [
             "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS)"
           ],
-          "duration": 52,
+          "duration": 45,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS) Test 03: deve alterar o conteudo cadastrado anteriormente, e validar que os dados realmente foram alterados e validar statusCode",
@@ -88,7 +88,7 @@
           "ancestorTitles": [
             "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS)"
           ],
-          "duration": 40,
+          "duration": 37,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Descrição da suíte de testes crud (post, get, put, delete CONTEUDOS) Test 04: deve remover o registro cadastrado, e validar a consulta do registro para garantir sua remoção.",
@@ -110,10 +110,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1730009297025,
-        "runtime": 7166,
+        "end": 1730160852648,
+        "runtime": 9201,
         "slow": true,
-        "start": 1730009289859
+        "start": 1730160843447
       },
       "skipped": false,
       "snapshot": {
@@ -131,7 +131,7 @@
           "ancestorTitles": [
             "Suite de testes crud (post, get, put, delete USER)"
           ],
-          "duration": 57,
+          "duration": 50,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes crud (post, get, put, delete USER) Alterando o registro cadastrado anteriormente, e verificando se os dados realmente foram alterados.",
@@ -146,7 +146,7 @@
           "ancestorTitles": [
             "Suite de testes crud (post, get, put, delete USER)"
           ],
-          "duration": 39,
+          "duration": 37,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes crud (post, get, put, delete USER) Deverá remover o registro cadastrado anteriormente. E retornar 204.",
