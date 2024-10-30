@@ -3,7 +3,7 @@ require('dotenv').config();
 
 module.exports={
     URLS: {
-        ROTA_ENDPOINT: process.env.URL_ROTA
+        ROTA_ENDPOINT: process.env.URL
     },
 
     HEADERS:{
