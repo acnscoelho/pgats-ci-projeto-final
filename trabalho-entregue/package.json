@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "lint" : "cypress run --env CI=true",
+    "lint:ts": "tsc -b jsconfig.json",
+    "start": "cypress open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e": "yarn jest run"
   },
   "keywords": [],
   "author": "",
