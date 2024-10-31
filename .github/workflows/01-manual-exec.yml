@@ -61,9 +61,3 @@ jobs:
         else
           echo "Todos os testes passaram com sucesso!"
         fi
-                  
-    - uses: actions/upload-artifact@v4
-        if: ${{ !cancelled() }}
-        with:
-         name: relatorio-de-testes
-         path: ./typescript/reports
