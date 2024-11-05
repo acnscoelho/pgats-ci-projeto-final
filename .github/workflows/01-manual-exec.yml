@@ -1,5 +1,4 @@
 # CI de Nìvel 01 - Disparo manual a partir de 1 clique
-
 name: 'Execução Manual'
 
 on:
@@ -8,6 +7,7 @@ on:
 jobs:
 
   e2e-tests:
+
     runs-on: ['ubuntu-latest']
 
     steps:
@@ -16,38 +16,18 @@ jobs:
       - name: Instalando Yarn
         run: npm install -g yarn
 
-    - name: Instalando dependências
-      working-directory: trabalho-entregue
-      run: yarn  
+      - name: Instalando dependências
+        run: yarn
 
-    - name: Instalando TypeScript
-      working-directory: trabalho-entregue
-      run: yarn global add typescript
+      - name: Instalando Playwright
+        run: yarn playwright install
 
-    - name: Instalando Express
-      working-directory: ./crud_clientes_node-main/backend
-      run: yarn add express 
+      - name: Testes E2E (end-to-end)
+        run: yarn run e2e
 
-    - name: Instalando swagger-jsdoc
-      working-directory: ./crud_clientes_node-main/backend
-      run: yarn add swagger-jsdoc   
-
-    - name: Instalando swagger-ui-express
-      working-directory: ./crud_clientes_node-main/backend
-      run: yarn add swagger-ui-express    
-
-    - name: Levantar o servidor em background
-       working-directory: ./crud_clientes_node-main/backend
-       run: yarn start &
-
-    - name: Testes E2E (end-to-end)
-      run: yarn run e2e
-      env:
-        URL: 'http://localhost:3000'
-
-    # passed, failed, cancelled
-    - uses: actions/upload-artifact@v4
-      if: ${{ !cancelled() }}
-      with:
-        name: relatorio-de-testes
-        path: ./typescript-report
+      # passed, failed, cancelled
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: relatorio-de-testes
+          path: ./playwright-report
