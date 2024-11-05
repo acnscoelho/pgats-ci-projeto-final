@@ -53,13 +53,5 @@ jobs:
       working-directory: trabalho-entregue 
       run: yarn run e2e
 
-    - name: Verificar o status dos testes
-      run: |
-        if [ $? -ne 0 ]; then
-          echo "Os testes falharam."
-          exit 1
-        else
-          echo "Todos os testes passaram com sucesso!"
-        fi
 
  
