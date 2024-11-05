@@ -1,35 +1,26 @@
-# CI de Nível 01 - Disparo Manual a partir de 1 clique
+# CI de Nìvel 01 - Disparo manual a partir de 1 clique
 
-# nome que aparece nas opções da pipe
-
-name: "Execução Manual"
-
-# regras de disparo da excucao (triggers)
+name: 'Execução Manual'
 
 on:
   workflow_dispatch:
 
 jobs:
 
-  # descricao do job
   e2e-tests:
+    runs-on: ['ubuntu-latest']
 
-    # maquina que o job vai executar
-    runs-on: ['ubuntu-latest'] 
+    steps:
+      - uses: actions/checkout@v4
 
-    # passo a passo das acoes do job
-    steps: 
-
-    - uses: actions/checkout@v4
-
-    - name: Instalando Yarn
-      run: npm install -g yarn
+      - name: Instalando Yarn
+        run: npm install -g yarn
 
     - name: Instalando dependências
       working-directory: trabalho-entregue
       run: yarn  
 
-     - name: Instalando TypeScript
+    - name: Instalando TypeScript
       working-directory: trabalho-entregue
       run: yarn global add typescript
 
@@ -60,6 +51,3 @@ jobs:
       with:
         name: relatorio-de-testes
         path: ./typescript-report
-
-
- 
