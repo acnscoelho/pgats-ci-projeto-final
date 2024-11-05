@@ -49,9 +49,17 @@ jobs:
        working-directory: ./crud_clientes_node-main/backend
        run: yarn start &
 
-    - name: Testes E2E (end-to-end) 
-      working-directory: trabalho-entregue 
+    - name: Testes E2E (end-to-end)
       run: yarn run e2e
+      env:
+        URL: 'http://localhost:3000'
+
+    # passed, failed, cancelled
+    - uses: actions/upload-artifact@v4
+      if: ${{ !cancelled() }}
+      with:
+        name: relatorio-de-testes
+        path: ./typescript-report
 
 
  
