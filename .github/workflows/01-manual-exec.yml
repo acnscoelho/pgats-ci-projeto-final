@@ -24,7 +24,7 @@ jobs:
 
     - name: Levantar o servidor em background
        working-directory: ./crud_clientes_node-main/backend
-       run: yarn start &
+       run: node app.js start &
 
     - name: Testes E2E (end-to-end)
       run: yarn run e2e
