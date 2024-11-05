@@ -33,17 +33,17 @@ jobs:
       working-directory: trabalho-entregue
       run: yarn global add typescript
 
-    - name: Instalando Express
-      working-directory: ./crud_clientes_node-main/backend
-      run: yarn add express 
+    #- name: Instalando Express
+      #working-directory: ./crud_clientes_node-main/backend
+      #run: yarn add express 
 
-    - name: Instalando swagger-jsdoc
-      working-directory: ./crud_clientes_node-main/backend
-      run: yarn add swagger-jsdoc   
+    #- name: Instalando swagger-jsdoc
+      #working-directory: ./crud_clientes_node-main/backend
+      #run: yarn add swagger-jsdoc   
 
-    - name: Instalando swagger-ui-express
-      working-directory: ./crud_clientes_node-main/backend
-      run: yarn add swagger-ui-express    
+   # - name: Instalando swagger-ui-express
+      #working-directory: ./crud_clientes_node-main/backend
+      #run: yarn add swagger-ui-express    
 
     - name: Levantar o servidor em background
        working-directory: ./crud_clientes_node-main/backend
