@@ -25,7 +25,7 @@ jobs:
 
       - name: Levantar o Servidor em background
         working-directory: ./crud_clientes_node-mai/backend
-        run: start &  
+        run: node app.js start &  
 
       - name: Testes E2E (end-to-end)
         working-directory: trabalho-entregue
